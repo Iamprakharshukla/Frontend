@@ -732,20 +732,20 @@ button, a { transition: var(--transition); }
   gap: 15px;
 }
 
-.card-author {
+.card-dealer1 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.author-avatar {
+.dealer1-avatar {
   width: 40px;
   height: 40px;
   overflow: hidden;
   border-radius: 50%;
 }
 
-.author-name > a {
+.dealer1-name > a {
   color: var(--dark-jungle-green);
   font-family: var(--ff-poppins);
   font-size: var(--fs-5);
@@ -753,9 +753,9 @@ button, a { transition: var(--transition); }
   margin-bottom: 3px;
 }
 
-.author-name > a:is(:hover, :focus) { color: var(--orange-soda); }
+.dealer1-name > a:is(:hover, :focus) { color: var(--orange-soda); }
 
-.author-title {
+.dealer1-title {
   color: var(--cadet);
   font-size: var(--fs-7);
 }
