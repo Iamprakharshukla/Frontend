@@ -49,3 +49,12 @@ window.addEventListener("scroll", function () {
   window.scrollY >= 400 ? header.classList.add("active")
     : header.classList.remove("active");
 });
+document.querySelectorAll('.dropdown-content a').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    // Prevent Default Behavior (Optional)
+    e.preventDefault();
+
+    // Redirect to Property Page
+    window.location.href = e.target.href;
+  });
+});

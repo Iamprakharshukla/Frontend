@@ -1681,6 +1681,38 @@ button, a { transition: var(--transition); }
   z-index: -1;
 }
 
-.btn:is(:hover, :focus)::before {
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change Color on Hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show Dropdown on Hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}.btn:is(:hover, :focus)::before {
   width: 100%;
 }
