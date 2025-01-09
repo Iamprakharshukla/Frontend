@@ -58,3 +58,14 @@ document.querySelectorAll('.dropdown-content a').forEach((link) => {
     window.location.href = e.target.href;
   });
 });
+// Wait until the page fully loads
+window.addEventListener("load", function () {
+  const preloader = document.getElementById("preloader");
+  const content = document.getElementById("content");
+
+  // Set a 3-second delay before hiding the preloader
+  setTimeout(() => {
+    preloader.style.display = "none";
+    content.style.display = "block";
+  }, 3000); // 3000 milliseconds = 3 seconds
+});
